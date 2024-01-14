@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Player Search</h1>
+    <form method="post" action="{{ url_for('player_search') }}">
+        <label for="player_name">Player Name:</label>
+        <input type="text" name="player_name" required>
+        <br>
+        <label for="season">Season:</label>
+        <input type="text" name="season" required>
+        <br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
